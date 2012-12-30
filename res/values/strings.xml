@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RingerManager</string>
+    <string name="location">You are at </string>
+    <string name="RingerMode"></string>
+    <string name="Vibrate">Vibrate</string>
+    <string name="NormalRingerTone">Normal Ringer Tone</string>
+    <string name="SilentMode">Silent Mode</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="EnterMode">Mode Name</string>
+    <string name="hint">Enter a name for the location</string>
+    <string name="Welcome">RINGER MANAGER!</string>
+    <string name="StartRMS">Start Ringer Manager</string>
+    <string name="Settings">Settings</string>
+    
+</resources>

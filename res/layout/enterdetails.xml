@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:overScrollMode="always" 
+        android:isScrollContainer="true" 
+        android:scrollbarAlwaysDrawVerticalTrack="true" 
+        android:scrollbarStyle="outsideInset" 
+        android:scrollbars="vertical">
+
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent">
+    <TableRow android:minHeight="30dp">    	    
+        <TextView android:width="100dp" />        
+    </TableRow>
+    <TableRow> 
+        <TextView 
+            android:text="@string/EnterMode"
+            android:width ="100dp"
+            android:paddingLeft="10dp"
+            />
+        <EditText 
+            android:id="@+id/txtModeName" 
+            android:width="100dp"
+            android:hint="@string/hint"/>
+    </TableRow> 
+        <TableRow android:minHeight="10dp">
+        	<TextView android:width="100dp" />
+        </TableRow>
+    
+    <TableRow>
+        <TextView 
+            android:text="@string/RingerMode"
+            android:width ="100dp"
+            android:height = "80dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            />
+
+        <RadioGroup android:id="@+id/radioGroup1" >
+            <RadioButton
+                android:id="@+id/radioNormal"
+                android:checked="true"
+                android:text="@string/NormalRingerTone" />
+            <RadioButton
+                android:id="@+id/radioSilent"
+                android:text="@string/SilentMode" />
+        </RadioGroup>       
+    </TableRow>
+    
+    <TableRow android:minHeight="10dp">
+    	    <TextView android:width="100dp" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:id="@+id/textView1"
+            android:text="@string/Vibrate"
+            android:width ="100dp" 
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2">
+
+            <RadioButton
+                android:id="@+id/radioYes"              
+                android:checked="true"
+                android:height="100dp"
+                android:text="@string/Yes" />
+
+            <RadioButton
+                android:id="@+id/radioNo"  
+                android:height="100dp"           
+                android:text="@string/No" />
+		</RadioGroup>
+     </TableRow>
+    
+    <TableRow android:minHeight="40dp">  	    
+        <TextView android:width="100dp" />        
+    </TableRow>
+
+  	<TableRow>
+
+  	    <Button
+  	        android:id="@+id/buttonOK"
+  	        android:text="@string/OK" />
+
+  	    <Button
+  	        android:id="@+id/buttonCancel"
+  	        android:layout_weight="8"
+  	        android:text="@string/Cancel" />
+
+  	    <TextView android:width="100dp" />
+  	</TableRow>
+
+  	<TableRow>
+ 	    <TextView
+  	        android:layout_weight="1"
+  	        android:width="100dp" />
+  	</TableRow>
+  	
+  	<TableRow>
+		<TextView android:width="100dp" />
+  	</TableRow>
+  	
+</TableLayout>
+</ScrollView>
